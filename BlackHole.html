@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="BlackHole.css">
+    </head>
+    <body>
+        <h1 id="title">Black Holes</h1>
+
+        <img src=https://wi-images.condecdn.net/image/6DoWNVJlrWM/crop/1620/landscape/f/black-hole.jpg/  
+        style="width:300px;height:200px;" class = "center">
+
+        <p>A black hole is a region of spacetime whose gravitational effects are so strong that not even light can escape from it.
+            Many black holes, especially those that are stellar-sized, are formed from massive stars that ran out of fuel. The stars have to
+            have a mass that is at least equivalent to the Oppenheimer-Volkov limit. Stars that are at least 18 times as massives as the Sun
+            are thought to leave black holes. Black holes are generally invisible. However, they often have accretion disks that indicate its presence.
+        </p>
+
+        <p>Black holes are thought to exist in the center of most galaxies. Their mass is at least a million times the mass of the Sun.
+            These are called supermassive blackholes. Our own Milky Way has a black hole called Sagitarrius A*. It is 4.3 million solar masses.
+        </p>
+
+        <p>
+        Black holes can be defined in terms of three properties: mass, angular momentum, and charge. A black hole that is not charged but rotates
+        is called a Kerr black hole. A black hole that is not charged and does not rotate is called a Schwarzschild black hole. Most black holes
+        are Kerr black holes. That is because the star they formed from had angular momentum.
+        </p>
+
+        </p>
+
+        <p>The edge of a blackhole is called an event horizon. The distance from the center of the black hole to the event horizon is called a 
+            Schwarzschild radius. If you compress an object to its Schwarzschild radius, it will become a black hole. The formula to determine
+            the Schwarzschild radius is: 
+        </p>
+
+        <img src=http://astronomy.swin.edu.au/cosmos/files/tex/1f6ea50b461ed41da74cd3bb07ad20ee18f313bb.png  
+        style="width:225px;height:100px;" class = "center" onclick="defineVariable()">
+
+        <p>As one can see, the Schwarzschild radius depends on the object's mass. To determine the Schwarzschild radius of an object, type its
+            mass in kilograms: </p>
+        
+        Mass: <input type="number" id = "massStatement" oninput="myFunction(this.value)"><br>
+
+        <p id="demo"></p>
+
+        <p>
+        General relativity predicts that there are singularities within the event horizon. A singularity is a point that has infinite density
+        and infinite spacetime curvature. To test the predictions of general relatives, one would have to go inside the event horizon. However,
+        it would be impossible to publish the results due to two reasons: extreme time dilation and extreme tidal forces. In the event horizon, there would
+        time, as observed from outside, is thought to be infinite. As a result, it would be impossible to relay the results. Additionally, due
+        to large gravitational forces, tidal forces can be apparent even at small distances, so your body can be stretched apart in a process called
+        spaghettification. This can tear your body apart, killing yourself in the process.
+        </p>
+
+        <script>
+        function myFunction(mass) {
+          var radius = document.getElementById("massStatement").innerHTML = mass * 1.4851831 * Math.pow(10, -27);
+          document.getElementById("demo").innerHTML = "The Schwarzschild radius is " + radius + " meters.";
+        }
+
+        function defineVariable() {
+            console.log("M = mass,/n c = speed of light");
+        }
+        </script>
+    </body> 
+</html>
+
+
+
+

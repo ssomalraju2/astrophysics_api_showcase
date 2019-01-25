@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NEO List</title>
+    <link rel="stylesheet" type="text/css" href="NEOdata.css">
+</head>
+<body>
+    <h1 id = "title">Near Earth Objects List</h1>
+
+    <p>
+    To get a list of NEOs from a given start date and the end date, type in the start date and end date and click <em> Get NEOs</em>. You will get a list of all objects that 
+    will come near Earth on each day between the dates you give, starting from the end date and going until the start date. Make sure the dates are in yyyy-MM-dd format. For 
+    example, to represent January 12, 2019, type in 2019-01-12. The difference between the start date and end date must be at most 7 days. If you want to get all NEOs that will 
+    come today, click <em> Get Today's NEOs</em>.
+     </p>
+
+    Start Date: <input type="text" id="start"><br>
+    End Date: <input type="text" id="end"><br>
+    <button onclick="returnData()">Get NEOs</button> 
+    <button onclick="todayAsteroids()">Get Today's NEOs</button> 
+    <button onclick="document.location.reload(true)">Refresh</button> 
+    <div id = "display"></div>
+    <script src = 'NEORender.js'></script> 
+</body>
+</html>
+

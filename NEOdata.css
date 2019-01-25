@@ -1,0 +1,35 @@
+body {
+    margin: 10px;
+}
+
+#title {
+    text-align: center
+}
+
+.profile {
+    background-color: lightblue;
+    width: 250px;
+    padding: 10px;
+    border: 5px solid navy;
+    margin: 10px;
+}
+
+.sub-block {
+    background-color: white;
+    width: 905px;
+    padding: 10px;
+    border: 5px solid red;
+    margin: 10px;
+    /*display: block;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+
+.asteroid-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.date-heading {
+    text-align: center;
+}
